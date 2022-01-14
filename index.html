@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="./images/todo.jpg">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/5734d4928d.js"></script>
+  </head>
+  <body>
     <div class="wrapper">
-        <header>Todo App</header>
-        <div class="inputField">
-            <input type="text." placeholder="Add your new todo">
-            <button> <i class="fas fa-plus"></i> </button>
-        </div>
-        <ul class="todoList">
-            <li>Buy a new gaming laptop <span><i class="fas fa-trash"></i> </span></li>
-            <li>complelte a previous task <span><i class="fas fa-trash"></i> </span></li>
-            <li>create a video for youtube <span><i class="fas fa-trash"></i> </span></li>
-            <li>create a new portfolio site <span><i class="fas fa-trash"></i> </span></li>
-        </ul>
-        <div class="footer">
-            <span>
-                you have 4 pending tasks
-            </span>
-            <button>Clear All</button>
-        </div>
+      <header>To-do List</header>
+      <div class="inputField">
+        <input type="text" placeholder="Add your new todo" />
+        <button><i class="fas fa-plus"></i></button>
+      </div>
+      <ul class="todoList">
+        <!--Data comes from local storage-->
+      </ul>
+      <div class="footer">
+        <span>Tasks added by you : <span class="pendingnumber"></span></span>
+        <button>Clear All</button>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
